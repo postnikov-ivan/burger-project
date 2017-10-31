@@ -223,9 +223,9 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: no-wrap;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -254,7 +254,8 @@ ul {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-left: 3.125rem; }
 
 .section__title {
   color: #f9b43b;
@@ -275,7 +276,7 @@ ul {
 .best {
   background-image: url("../../img/bg/best.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
@@ -394,8 +395,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -o-object-fit: cover;
-  object-fit: cover;
-  /*object-position: 50% 50%;*/ }
+  object-fit: cover; }
 
 .reviews__name {
   margin-top: 3.125rem;
@@ -418,5 +418,66 @@ ul {
   text-transform: uppercase; }
   .reviews__btn:hover {
     background-color: #171819; }
+
+.team {
+  background-image: url("../../img/bg/team.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /*display: flex;
+	justify-content: center;
+	align-items: center;*/ }
+
+.team__container {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(47, 50, 52, 0.9);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  /*margin-right: 0;*/
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 5rem; }
+
+.section__team_title {
+  padding: 0; }
+
+.partners__accordion {
+  color: white; }
+
+.partner__item:target .partner__info {
+  height: 200px; }
+
+.partner__item a {
+  text-decoration: none;
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: white; }
+  .partner__item a:hover {
+    color: #f8b43a; }
+
+.partner__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden; }
+
+.partner__foto {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-image: url("../../img/content/team/partner.jpg");
+  background-position: center;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */

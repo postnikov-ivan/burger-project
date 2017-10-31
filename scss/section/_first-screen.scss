@@ -71,7 +71,7 @@
 .first-screen__content {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: no-wrap;
 	flex-grow: 1;
 	align-items: center;
 	padding-bottom: 15%;
@@ -85,6 +85,7 @@
 .first-screen__description {
 	flex-direction: column;
 	justify-content: center;
+	margin-left: rem(50px);
 }
 
 .section__title {
