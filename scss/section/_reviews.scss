@@ -2,7 +2,10 @@
 	position: relative;
 	width: 25%;
 	height: 50%;
-	overflow-x: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	filter: grayscale(100%);
 	
 }
 
@@ -14,13 +17,15 @@
     height: 100%;
     color: #fff;
     padding-left: 20px;
+    padding-right: 30px;
     opacity: 0;
-    background-color: #515151;
-    transition: 1s;
+    background-color: rgba(#454545, .7);
+    transition: .5s;
+    cursor: pointer;
 }
 
 .reviews__item:hover .reviews__description{
-	opacity: .6;
+	opacity: 1;
 
 }
 
@@ -34,14 +39,6 @@
 .reviews__container {
 	width: 100%;
 	height: 100%;
-}
-
-.reviews__foto {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	-o-object-fit: cover;
-	object-fit: cover;
 }
 
 .reviews__name {
@@ -66,6 +63,8 @@
 	background-color: #2f3234;
 	border-radius: 5px;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
 	&:hover {
 		background-color: darken(#2f3234, 10%);
   	}

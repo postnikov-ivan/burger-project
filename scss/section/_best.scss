@@ -12,7 +12,7 @@
 	height: 100%;
 }
 
-.section__title_best {
+.best__title {
 	color: #2f3234;
 	padding: 0;
 	margin-bottom: 60px;
@@ -23,11 +23,11 @@
 
 }
 
-.quality__list {
+.best__list {
 	display: flex;
 }
 
-.quality__item {
+.best__item {
 	width: 285px;
 	display: flex;
 	flex-direction: column;
@@ -38,24 +38,25 @@
 	}
 }
 
-.quality__img {
+.best__img {
 	height: 95px;
 	margin-bottom: rem(30px);
 }
 
-.quality__title {
-	font-family: 'Lifehack';
-	font-size: 24px;
-	font-weight: normal;
-	text-align: center;
-	line-height: 1;
-	margin-bottom: 20px;
-}
-
-.quality__text {
-	color: #8d8b89;
-	font-size: 14px;
-	font-weight: 300;
-	text-align: center;
-	line-height: 2;
+.best__description {
+	span {
+		font-family: 'Lifehack';
+		font-size: 24px;
+		font-weight: normal;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 20px;
+		}
+	p {
+		color: #8d8b89;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 2;
+	}
 }
