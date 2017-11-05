@@ -333,7 +333,7 @@ ul {
   height: 95px;
   margin-bottom: 1.875rem; }
 
-.quality__title {
+.quality__description span {
   font-family: 'Lifehack';
   font-size: 24px;
   font-weight: normal;
@@ -341,7 +341,7 @@ ul {
   line-height: 1;
   margin-bottom: 20px; }
 
-.quality__text {
+.quality__description p {
   color: #8d8b89;
   font-size: 14px;
   font-weight: 300;
@@ -394,8 +394,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -o-object-fit: cover;
-  object-fit: cover;
-  /*object-position: 50% 50%;*/ }
+  object-fit: cover; }
 
 .reviews__name {
   margin-top: 3.125rem;

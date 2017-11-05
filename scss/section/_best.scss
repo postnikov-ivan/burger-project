@@ -43,19 +43,25 @@
 	margin-bottom: rem(30px);
 }
 
-.quality__title {
-	font-family: 'Lifehack';
-	font-size: 24px;
-	font-weight: normal;
-	text-align: center;
-	line-height: 1;
-	margin-bottom: 20px;
+.quality__description{
+
+		span {
+		font-family: 'Lifehack';
+		font-size: 24px;
+		font-weight: normal;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+
+		p {
+		color: #8d8b89;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 2;
+	}
 }
 
-.quality__text {
-	color: #8d8b89;
-	font-size: 14px;
-	font-weight: 300;
-	text-align: center;
-	line-height: 2;
-}
+
+
