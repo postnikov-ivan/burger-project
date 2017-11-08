@@ -42,8 +42,8 @@
 }
 
 .reviews__name {
-	margin-top: rem(50px);
-	margin-bottom: rem(30px);
+	margin-top: rem(45px);
+	margin-bottom: rem(20px);
 	font-size: 14px;
 	font-family: 'Gagalin';
 	font-weight: 400;
@@ -51,14 +51,15 @@
 }
 
 .reviews__text{
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 	font-weight: 300;
 	font-size: 14px;
+	line-height: 24px;
 }
 
 .reviews__btn{
 	width: rem(130px);
-	
+	font-size: 13px;
 	padding: 10px 17px;
 	background-color: #2f3234;
 	border-radius: 5px;

@@ -48,15 +48,16 @@
 		font-family: 'Lifehack';
 		font-size: 24px;
 		font-weight: normal;
-		text-align: center;
 		line-height: 1;
-		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+
 		}
 	p {
 		color: #8d8b89;
 		font-size: 14px;
 		font-weight: 300;
 		text-align: center;
-		line-height: 2;
+		line-height: 24px;
 	}
 }

@@ -7,6 +7,11 @@
 	align-items: center;
 }
 
+.order__title {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
 .order__form	{
 	display: flex;
 	margin-left: -5%;
@@ -30,7 +35,7 @@
 }
 
 .order__form-input {
-	font-size: rem(14px);
+	font-size: rem(21px);
 	padding: rem(10px);
 	padding: rem(5px) rem(10px);
 	border: rem(1px) solid #d1cfcb;
