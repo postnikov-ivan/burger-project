@@ -7,31 +7,85 @@
 	align-items: center;
 }
 
+.order__container {
+  @include phones {
+    width: 100%;
+    max-width: 99%;
+  }
+}
+
 .order__title {
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: rem(60px);
+
+  @include phones {
+    font-size: rem(55px);
+    text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: rem(25px);
+    line-height: rem(70px);
+
+  }
 }
 
 .order__form	{
 	display: flex;
-	margin-left: -5%;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+   /* margin: 0;*/
+
+  }
 }
 
 .order__form-col {
-	width: 45%;
-	margin-left: 5%;
+	width: 50%;
+  margin-right: 2%;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin: 0;
+    width: 66%;
+    /*padding-right: rem(30px);*/
+  }
+
+  @include phones {
+    width: 100%;
+  }
 }
 
+/*.order__form-col_right {
+  padding-left: rem(10px);
+
+  @include tablets {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+*/
 .order__form-row {
 	display: flex;
-	margin-bottom: rem(16px);
+	margin-bottom: rem(15px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
 }
 
 .order__form-label {
-	margin-bottom: rem(17px);
+    margin-bottom: rem(5px);
     @include ubuntu(medium);
   	color: #fff;
   	font-size: rem(14px);
+
+    &.order__form-label_name {
+      margin-bottom: rem(15px);
+      margin-top: rem(-10px);
+    }
 }
 
 .order__form-input {
@@ -47,18 +101,41 @@
 	display: block;
 	width: 100%;
 	flex: 1;
-	margin-left: 10px;
+	margin-right: rem(20px);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.order__form-block_right {
+  margin: 0;
+
+ /* @include tablets {
+    margin-top: rem(15px);
+  }*/
 }
 
 .order__form-input_textarea {
-	height: rem(100px);
+	height: rem(110px);
 	resize: none;
+  overflow-x: hidden;
+}
+
+.order__form-btns {
+  margin-top: rem(-4px);
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .order__radio {
   position: relative;
   white-space: nowrap;
-  margin-right: rem(20px);
+  margin-right: rem(15px);
+  margin-bottom: rem(8px);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -131,6 +208,8 @@
 
 .order__form-btn {
   margin-right: rem(20px);
+  margin-left: rem(2px);
+  margin-top: rem(-5px);
   border: 0;
   background: $orange;
   font-size: rem(13px);
@@ -138,8 +217,12 @@
   border-radius: rem(5px);
   color: #ffffff;
   @include ubuntu(middle);
-  padding: rem(10px) rem(15px);
+  padding: rem(10px) rem(16px);
   cursor: pointer;
+
+  @include tablets {
+    margin-top: rem(15px);
+  }
 }
 
 .order__form-btn_reset {

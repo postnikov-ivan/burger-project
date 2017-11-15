@@ -1,7 +1,23 @@
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
+	font-size: rem(16px);
 	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 	line-height: 1.42;
 	color: $dark;
@@ -14,10 +30,6 @@ body {
   box-sizing: border-box; 
 }
 
-body, html {
-	height: 100%;
-}
-
 ul {
 	margin: 0;
 	padding: 0;
@@ -27,9 +39,9 @@ ul {
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1px);
+  height: rem(1px);
+  margin: rem(-1px);
   border: 0;
   padding: 0;
 

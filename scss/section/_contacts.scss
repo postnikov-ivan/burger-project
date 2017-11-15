@@ -33,24 +33,37 @@
  	display: flex;
  	flex-direction: row;
  	align-items: center;
+
+ 	@include phones {
+ 		flex-direction: column;
+ 	}
  }
 
 .footer__col {
 	width: 50%;
 	margin-bottom: rem(15px);
 	color: #fff;
+
+	@include phones {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .footer__address {
  	color: #ffffff;
  	font-size: rem(14px);
+
+ 	@include phones {
+ 		margin: rem(5px) 0;
+ 	}
 }
 
 .footer__phone {
 	color: $orange;
 	@include ubuntu(bold);
 	text-decoration: none;
-	font-size: 14px;
+	font-size: rem(14px);
 }
 
 .footer__phone-icon {
@@ -64,6 +77,11 @@
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: 0;
+
+	@include phones {
+		justify-content: center;
+		margin-bottom: rem(15px);
+	}
 }
 
 .socials {

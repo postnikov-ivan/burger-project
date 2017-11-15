@@ -10,25 +10,38 @@
 
 .best__container {
 	height: 100%;
+
+	/*@include tablets {
+		justify-content: flex-start;
+	}*/
 }
 
 .best__title {
 	color: #2f3234;
 	padding: 0;
-	margin-bottom: 60px;
+	margin-bottom: rem(60px);
+
+	/*@include tablets {
+		margin-bottom: 22%;
+		margin-top: 15%;
+	}*/
 }
 
 .best__content {
 	display: flex;
-
 }
 
 .best__list {
 	display: flex;
+
+	@include phones {
+		flex-direction: column;
+		padding-left: rem(15px);
+	}
 }
 
 .best__item {
-	width: 285px;
+	max-width: rem(285px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -36,28 +49,65 @@
 	&:last-child {
 		margin-right: 0;
 	}
+
+	@include phones {
+		max-width: 100%;
+		flex-direction: row;
+		margin-right: 0;
+		margin-bottom: rem(50px);
+
+	}
 }
 
 .best__img {
-	height: 95px;
+	
 	margin-bottom: rem(30px);
+
+	@include phones {
+		width: rem(100px);
+		height: rem(100px);
+		margin-right: rem(30px);
+		
+	}
+}
+
+.best__img-pic {
+	width: 100%;
+	height: rem(87px);
+	svg {
+  		max-width: 95%;
+  	}
 }
 
 .best__description {
 	span {
 		font-family: 'Lifehack';
-		font-size: 24px;
+		font-size: rem(24px);
 		font-weight: normal;
 		line-height: 1;
+		text-align: center;
 		display: flex;
 		justify-content: center;
 
+		@include phones {
+			text-align: left;
+			justify-content: flex-start;
 		}
+	}
+
 	p {
 		color: #8d8b89;
-		font-size: 14px;
+		font-size: rem(14px);
 		font-weight: 300;
 		text-align: center;
-		line-height: 24px;
+		line-height: rem(24px);
+
+		@include phones {
+			text-align: left;
+		}
+	}
+
+	@include phones {
+		width: 80%;
 	}
 }
